@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rosa Hazel Santiago Del Angel">
+  <title>Suscripción - Hazel &amp; Brew</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+  <style>
+    /* Aplica la transición y el movimiento solo al enlace principal para no cortar el dropdown */
+    .navbar-nav > .nav-item > .nav-link {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .navbar-nav > .nav-item > .nav-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 3px 6px rgba(219, 112, 147, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="imagenes/logo.png" height="24" alt="Logo Hazel & Brew">
+        <span>HAZEL &amp; BREW</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Principal</a>
+          </li>
+
+          <!-- Dropdown de Menú -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menú
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="espreso.html">Espresso</a></li>
+              <li><a class="dropdown-item" href="reposteria.html">Repostería</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Lacteosyvegetal.html">Lácteos y Vegetales</a></li>
+              <li><a class="dropdown-item" href="Jarabesyesencias.html">Jarabes y Esencias</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="suscripcion.html">Suscripción</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Suscripción -->
+  <div class="container mt-5 mb-5" style="max-width: 600px;">
+    <h2 class="text-center mb-4">Suscríbete a Hazel &amp; Brew</h2>
+    <form class="border p-4 rounded shadow-sm bg-light">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ej. Rosa Hazel" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="tu-correo@example.com" required>
+      </div>
+      <button type="submit" class="btn text-white w-100 fw-semibold" style="background-color: palevioletred;">Suscribirme</button>
+    </form>
+
+    <!-- Botón alineado a la derecha -->
+    <div class="mt-4 text-end">
+      <a href="profinal_meta.html" class="btn rounded-pill px-4 py-2 fw-semibold shadow-sm" style="background-color: plum; color: white;">
+        <i class="bi bi-arrow-left"></i> Regresar al Inicio
+      </a>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
